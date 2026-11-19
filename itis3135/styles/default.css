@@ -102,3 +102,48 @@ img {
         gap: 8px;
     }
 }
+
+
+/* Introduction page display name */
+h6 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+figure {
+    margin: 25px auto;
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+blockquote {
+    margin: 30px auto;
+    text-align: center;
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+li ul {
+    margin-top: 10px;
+}
+
+nav[aria-label="Introduction profile links"] {
+    justify-content: center;
+    margin-top: 30px;
+}
