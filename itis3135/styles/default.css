@@ -1,4 +1,11 @@
 
+/* =========================================
+   Matthew Lovegren - ITIS3135
+   Mellow Lizard Course Website
+   ========================================= */
+
+/* General Website Styling */
+
 body {
     max-width: 1200px;
     margin: 0 auto;
@@ -9,6 +16,8 @@ body {
     line-height: 1.6;
 }
 
+/* Header */
+
 header {
     padding: 30px 20px;
     background-color: #20364d;
@@ -17,10 +26,12 @@ header {
     border-bottom: 4px solid #88b8dc;
 }
 
+/* Headings */
+
 h1 {
     margin: 0 0 20px;
     font-family: Georgia, serif;
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: 2rem;
 }
 
 h2 {
@@ -34,6 +45,13 @@ h3 {
     color: #20364d;
     font-family: Georgia, serif;
 }
+
+h4 {
+    color: #20364d;
+    font-family: Georgia, serif;
+}
+
+/* Navigation */
 
 nav {
     display: flex;
@@ -50,6 +68,8 @@ nav[aria-label="Secondary navigation"] {
     font-size: 0.95rem;
 }
 
+/* Links */
+
 a,
 a:visited {
     color: #70451d;
@@ -65,16 +85,24 @@ a:hover {
     text-decoration: underline;
 }
 
-a:focus-visible {
-    outline: 3px solid currentColor;
-    outline-offset: 4px;
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #b78338;
+    outline-offset: 3px;
 }
+
+/* Main Content */
 
 main {
     max-width: 900px;
     margin: 35px auto;
     padding: 25px;
 }
+
+/* Footer */
 
 footer {
     margin-top: 35px;
@@ -83,28 +111,15 @@ footer {
     text-align: center;
 }
 
+/* Images */
+
 img {
     max-width: 100%;
     height: auto;
 }
 
-/* Adjust spacing and navigation for smaller screens. */
-@media (max-width: 600px) {
-    header {
-        padding: 20px 15px;
-    }
+/* Introduction Page */
 
-    main {
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    nav {
-        gap: 8px;
-    }
-}
-
-/* Introduction page display name. */
 h6 {
     text-align: center;
     font-family: Georgia, serif;
@@ -135,6 +150,8 @@ blockquote {
     font-style: italic;
 }
 
+/* Lists */
+
 li {
     margin-bottom: 12px;
 }
@@ -148,81 +165,87 @@ nav[aria-label="Introduction profile links"] {
     margin-top: 30px;
 }
 
-/* Mellow Lizard Lounge activity cards. */
+/* =========================================
+   Playing Cards - Mellow Lizard Collection
+   ========================================= */
+
+/* Collection container */
 
 .lounge-collection {
-    max-width: 1100px;
     margin: 30px auto;
-    text-align: center;
 }
 
-.lounge-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-    margin-top: 25px;
-}
+/* Individual collectible cards */
 
 .lounge-card {
-    flex: 0 1 220px;
-}
-
-/* Individual lounge activity card. */
-.lounge-card {
-    padding: 20px;
-    background-color: #fffdf5;
-    border: 2px solid #b78338;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 240px;
+    min-height: 340px;
+    margin: 12px;
+    padding: 20px 15px 40px;
+    background-color: #9fc9ef;
+    border-radius: 10px;
     text-align: center;
-    transition: transform 0.2s ease;
+    color: #20364d;
 }
 
-/* Activity images. */
+
+/* Card images */
+
 .lounge-card img {
     display: block;
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin: 0 auto 15px;
-    border-radius: 8px;
+    max-width: 180px;
+    height: auto;
+    margin: 45px auto 15px;
 }
 
-/* Card titles. */
+/* Card headings */
+
 .lounge-card-title {
-    color: #303d35;
-    font-family: Georgia, serif;
-    font-size: 20px;
     margin: 10px 0;
+    color: #20364d;
+    font-family: Georgia, serif;
+    font-size: 1.2rem;
 }
 
-/* Card descriptions. */
+/* Card descriptions */
+
 .lounge-card p {
-    color: #303d35;
-    font-family: Arial, sans-serif;
+    color: #20364d;
     font-size: 15px;
     line-height: 1.5;
 }
 
-/* Subtle hover effect. */
-.lounge-card:hover {
-    transform: translateY(-5px);
+/* Corner numbers */
+
+.card-corner {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-/* Accessibility: reduce animation when requested. */
-@media (prefers-reduced-motion: reduce) {
-    .lounge-card {
-        transition: none;
-    }
+/* Top-left number */
 
-    .lounge-card:hover {
-        transform: none;
-    }
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 12px;
 }
 
-/* Mellow Lizard Lounge inventory table. */
+/* Bottom-right number */
+
+.bottom-right {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+}
+
+/* =========================================
+   Inventory Tables
+   ========================================= */
 
 main table {
     width: 100%;
@@ -260,8 +283,64 @@ main table tbody tr:nth-child(odd) {
     color: #303d35;
 }
 
-/* Adjust inventory table on smaller screens. */
+/* =========================================
+   Forms
+   ========================================= */
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #88b8dc;
+}
+
+legend {
+    font-weight: bold;
+    color: #20364d;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #20364d;
+    color: #f0f5fa;
+    border: 1px solid #88b8dc;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #345675;
+}
+
+/* =========================================
+   Responsive Design
+   ========================================= */
+
 @media (max-width: 600px) {
+    header {
+        padding: 20px 15px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
     main table {
         font-size: 13px;
     }
@@ -270,5 +349,12 @@ main table tbody tr:nth-child(odd) {
     main table td {
         padding: 6px;
         overflow-wrap: anywhere;
+    }
+
+    .lounge-card {
+        width: auto;
+        max-width: 240px;
+        min-height: 0;
+        margin: 12px auto;
     }
 }

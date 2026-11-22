@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,78 +14,107 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- This div and ID allow JavaScript to insert the shared header. -->
+    <!-- This div uses an ID so JavaScript can insert the shared header component. -->
     <div id="site-header"></div>
 
     <main>
         <h2>Playing Cards</h2>
 
         <p>
-            Welcome to the Mellow Lizard Lounge! Explore six
-            different activities designed for relaxation,
-            entertainment, and adventure.
+            Welcome to the Mellow Lizard Lounge card collection.
+            These six cards highlight different activities and
+            moods found around the lounge.
         </p>
 
-        <!-- This section organizes the six lounge activity cards.
-             The classes are used for responsive CSS styling. -->
+        <!-- This section groups the themed card collection. -->
         <section class="lounge-collection">
-            <h3>Lounge Activities</h3>
+            <h3>Mellow Lizard Lounge Collection</h3>
 
             <div class="lounge-grid">
 
                 <article class="lounge-card">
-                    <img src="images/card-gaming.png"
-                         alt="Gaming controller in a cozy lounge"
-                         width="200" height="200">
-                    <h4>The Gamer</h4>
-                    <p>Enjoy your favorite video games.</p>
+                    <p class="card-corner top-left">1</p>
+                    <img
+                        src="images/card-gaming.png"
+                        alt="Gaming-themed Mellow Lizard Lounge card"
+                        width="180"
+                        height="180"
+                    >
+                    <h4 class="lounge-card-title">The Gamer</h4>
+                    <p>Enjoy your favorite video games in a relaxed setting.</p>
+                    <p class="card-corner bottom-right">1</p>
                 </article>
 
                 <article class="lounge-card">
-                    <img src="images/card-reading.png"
-                         alt="Open book in a relaxing reading area"
-                         width="200" height="200">
-                    <h4>The Bookworm</h4>
-                    <p>Escape into a good book.</p>
+                    <p class="card-corner top-left">2</p>
+                    <img
+                        src="images/card-reading.png"
+                        alt="Reading-themed Mellow Lizard Lounge card"
+                        width="180"
+                        height="180"
+                    >
+                    <h4 class="lounge-card-title">The Bookworm</h4>
+                    <p>Settle in with a good book and a quiet atmosphere.</p>
+                    <p class="card-corner bottom-right">2</p>
                 </article>
 
                 <article class="lounge-card">
-                    <img src="images/card-music.png"
-                         alt="Headphones resting on a lounge table"
-                         width="200" height="200">
-                    <h4>The Musician</h4>
-                    <p>Unwind with your favorite music.</p>
+                    <p class="card-corner top-left">3</p>
+                    <img
+                        src="images/card-music.png"
+                        alt="Music-themed Mellow Lizard Lounge card"
+                        width="180"
+                        height="180"
+                    >
+                    <h4 class="lounge-card-title">The Musician</h4>
+                    <p>Relax and listen to your favorite songs and playlists.</p>
+                    <p class="card-corner bottom-right">3</p>
                 </article>
 
                 <article class="lounge-card">
-                    <img src="images/card-movies.png"
-                         alt="Vintage film camera and a green lizard"
-                         width="200" height="200">
-                    <h4>The Movie Buff</h4>
-                    <p>Enjoy a relaxing movie night.</p>
+                    <p class="card-corner top-left">4</p>
+                    <img
+                        src="images/card-movies.png"
+                        alt="Movie-themed Mellow Lizard Lounge card"
+                        width="180"
+                        height="180"
+                    >
+                    <h4 class="lounge-card-title">The Movie Buff</h4>
+                    <p>Kick back and enjoy a cozy movie experience.</p>
+                    <p class="card-corner bottom-right">4</p>
                 </article>
 
                 <article class="lounge-card">
-                    <img src="images/card-dreaming.png"
-                         alt="Green lizard relaxing on a beanbag"
-                         width="200" height="200">
-                    <h4>The Dreamer</h4>
-                    <p>Find a quiet place to relax.</p>
+                    <p class="card-corner top-left">5</p>
+                    <img
+                        src="images/card-dreaming.png"
+                        alt="Dreaming-themed Mellow Lizard Lounge card"
+                        width="180"
+                        height="180"
+                    >
+                    <h4 class="lounge-card-title">The Dreamer</h4>
+                    <p>Unwind, rest, and enjoy the calmest corner of the lounge.</p>
+                    <p class="card-corner bottom-right">5</p>
                 </article>
 
                 <article class="lounge-card">
-                    <img src="images/card-exploring.png"
-                         alt="Compass resting on an adventure map"
-                         width="200" height="200">
-                    <h4>The Explorer</h4>
-                    <p>Discover something new every day.</p>
+                    <p class="card-corner top-left">6</p>
+                    <img
+                        src="images/card-exploring.png"
+                        alt="Exploring-themed Mellow Lizard Lounge card"
+                        width="180"
+                        height="180"
+                    >
+                    <h4 class="lounge-card-title">The Explorer</h4>
+                    <p>Discover new interests, ideas, and lounge adventures.</p>
+                    <p class="card-corner bottom-right">6</p>
                 </article>
 
             </div>
         </section>
     </main>
 
-    <!-- This div and ID allow JavaScript to insert the shared footer. -->
+    <!-- This div uses an ID so JavaScript can insert the shared footer component. -->
     <div id="site-footer"></div>
 </body>
 </html>
