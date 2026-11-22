@@ -1,0 +1,477 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matthew Lovegren's Mellow Lizard | ITIS3135 | Everything Pictures</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="scripts/include_components.js" defer></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Div IDs allow JavaScript to insert the shared components. -->
+    <div id="site-header"></div>
+
+    <main>
+        <h2>Everything Pictures</h2>
+
+        <p>
+            This page explores different image formats, resolutions,
+            and proportions used in web development. By comparing
+            original photographs with resized and modified versions,
+            we can see how image quality, file size, and aspect ratio
+            affect the appearance of images on a website.
+        </p>
+
+        <section>
+            <h3>Exploring Image Formats with a Pexels Lizard Photograph</h3>
+
+            <p>
+                I chose this photograph because it features a small
+                lizard resting on a rock, which fits the Mellow Lizard
+                theme of my course website. The photograph was taken
+                by Alari Tammsalu and downloaded from Pexels.
+                The original JPG measures 4672 by 7008 pixels.
+                Its detailed textures and natural colors make it
+                useful for comparing image formats and resolutions.
+                The photographer also shares wildlife and nature
+                photography on Pexels.
+            </p>
+
+            <p>
+                Original photograph:
+                <a href="https://www.pexels.com/photo/a-small-lizard-sitting-on-top-of-a-rock-27389967/">
+                    Alari Tammsalu on Pexels
+                </a>
+            </p>
+
+            <article>
+                <h4>Original Image</h4>
+
+                <p>
+                    Click the links below to open each version
+                    of the photograph in a new tab.
+                </p>
+
+                <p>
+                    <a href="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels.jpg"
+                       target="_blank" rel="noopener noreferrer">Original JPG</a> |
+                    <a href="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels.gif"
+                       target="_blank" rel="noopener noreferrer">Original as GIF</a> |
+                    <a href="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels-grayscale.png"
+                       target="_blank" rel="noopener noreferrer">Grayscale PNG</a> |
+                    <a href="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels-black-and-white.png"
+                       target="_blank" rel="noopener noreferrer">Black-and-White PNG</a>
+                </p>
+
+                <!-- The gallery div groups images for a side-by-side comparison. -->
+                <div class="picture-gallery">
+                    <figure>
+                        <img
+                            src="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels.jpg"
+                            alt="Original color photograph of a lizard"
+                            width="250"
+                        >
+                        <figcaption>Original color JPG photograph.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels.gif"
+                            alt="GIF version of the lizard"
+                            width="250"
+                        >
+                        <figcaption>GIF with a limited color palette.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels-grayscale.png"
+                            alt="Grayscale version of the lizard"
+                            width="250"
+                        >
+                        <figcaption>Grayscale PNG with shades of gray.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels-black-and-white.png"
+                            alt="Black-and-white version of the lizard"
+                            width="250"
+                        >
+                        <figcaption>Black-and-white PNG using two colors.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h4>Downsizing Images with CSS</h4>
+
+                <p>
+                    CSS can reduce the displayed size of an image
+                    without changing its original dimensions or file size.
+                    The original photograph remains 4672 by 7008 pixels.
+                </p>
+
+                <figure>
+                    <!-- Inline CSS preserves proportional image sizing. -->
+                    <img
+                        src="images/a-small-lizard-sitting-on-top-of-a-rock-27389967@alari-tammsalu_pexels.jpg"
+                        alt="Lizard resized proportionally using CSS"
+                        style="width: 400px; height: auto;"
+                    >
+                    <figcaption>
+                        Full-resolution JPG displayed at 400 pixels wide
+                        using CSS while maintaining its aspect ratio.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h4>Proper Reduction of Image with Editor</h4>
+
+                <p>
+                    This version was resized using an image editor
+                    to 600 by 900 pixels. Unlike CSS resizing,
+                    the edited file contains fewer pixels.
+                </p>
+
+                <figure>
+                    <img
+                        src="images/lizard-600x900.png"
+                        alt="Properly resized lizard photograph"
+                        width="400"
+                        height="600"
+                    >
+                    <figcaption>
+                        Properly resized 600 by 900 PNG image,
+                        preserving the original proportions.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h4>Improper Image Proportions with CSS</h4>
+
+                <p>
+                    These examples intentionally change the width
+                    or height independently, causing the lizard
+                    to appear stretched or compressed.
+                </p>
+
+                <!-- The gallery div arranges four distorted examples. -->
+                <div class="picture-gallery">
+                    <figure>
+                        <img
+                            class="lizard-short-one"
+                            src="images/lizard-600x900.png"
+                            alt="Lizard compressed vertically"
+                        >
+                        <figcaption>
+                            Height reduced to 600 pixels.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            class="lizard-short-two"
+                            src="images/lizard-600x900.png"
+                            alt="Lizard heavily compressed vertically"
+                        >
+                        <figcaption>
+                            Height reduced further to 400 pixels.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            class="lizard-narrow-one"
+                            src="images/lizard-600x900.png"
+                            alt="Lizard compressed horizontally"
+                        >
+                        <figcaption>
+                            Width reduced to 400 pixels.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            class="lizard-narrow-two"
+                            src="images/lizard-600x900.png"
+                            alt="Lizard heavily compressed horizontally"
+                        >
+                        <figcaption>
+                            Width reduced further to 267 pixels.
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h4>Improper Enlarging with CSS</h4>
+
+                <p>
+                    The first image is 600 by 900 pixels. The second
+                    was reduced to 150 by 225 pixels. Both are
+                    displayed at the same size so the loss
+                    of image quality can be compared.
+                </p>
+
+                <!-- The gallery div places both resolutions together. -->
+                <div class="picture-gallery">
+                    <figure>
+                        <img
+                            src="images/lizard-600x900.png"
+                            alt="Higher-resolution lizard"
+                            width="300"
+                            height="450"
+                        >
+                        <figcaption>
+                            600 by 900 image displayed at 300 by 450.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/lizard-150x225.png"
+                            alt="Lower-resolution lizard enlarged"
+                            width="300"
+                            height="450"
+                        >
+                        <figcaption>
+                            150 by 225 image enlarged to 300 by 450.
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Exploring Image Proportions with a Personal Photograph</h3>
+
+            <p>
+                I took this photograph of a round paper plate
+                with my hand beside it. The circular plate provides
+                a clear geometric reference for demonstrating
+                how incorrect image proportions can cause distortion.
+                The original image was saved as a PNG photograph.
+                The hand provides a recognizable comparison
+                alongside the geometric shape.
+            </p>
+
+            <article>
+                <h4>Original Image</h4>
+
+                <p>
+                    Click the links below to open the different
+                    versions of my personal photograph.
+                </p>
+
+                <p>
+                    <a href="images/round-plate-with-hand@matthew-lovegren.png"
+                       target="_blank" rel="noopener noreferrer">Original PNG</a> |
+                    <a href="images/round-plate-with-hand@matthew-lovegren.gif"
+                       target="_blank" rel="noopener noreferrer">Original as GIF</a> |
+                    <a href="images/round-plate-with-hand@matthew-lovegren-grayscale.png"
+                       target="_blank" rel="noopener noreferrer">Grayscale PNG</a> |
+                    <a href="images/round-plate-with-hand@matthew-lovegren-black-and-white.png"
+                       target="_blank" rel="noopener noreferrer">Black-and-White PNG</a>
+                </p>
+
+                <!-- The gallery div groups the four image formats. -->
+                <div class="picture-gallery">
+                    <figure>
+                        <img
+                            src="images/round-plate-with-hand@matthew-lovegren.png"
+                            alt="Original photograph of a round plate and hand"
+                            width="250"
+                        >
+                        <figcaption>Original color PNG photograph.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/round-plate-with-hand@matthew-lovegren.gif"
+                            alt="GIF photograph of a plate and hand"
+                            width="250"
+                        >
+                        <figcaption>GIF version with fewer colors.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/round-plate-with-hand@matthew-lovegren-grayscale.png"
+                            alt="Grayscale photograph of a plate and hand"
+                            width="250"
+                        >
+                        <figcaption>Grayscale PNG using shades of gray.</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/round-plate-with-hand@matthew-lovegren-black-and-white.png"
+                            alt="Black-and-white photograph of a plate and hand"
+                            width="250"
+                        >
+                        <figcaption>Black-and-white PNG using two colors.</figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h4>Downsizing Images with CSS</h4>
+
+                <p>
+                    This photograph uses CSS to reduce its displayed
+                    size while preserving its original proportions.
+                    The actual image file is not changed.
+                </p>
+
+                <figure>
+                    <!-- Inline CSS preserves the original aspect ratio. -->
+                    <img
+                        src="images/round-plate-with-hand@matthew-lovegren.png"
+                        alt="Round plate and hand proportionally resized"
+                        style="width: 400px; height: auto;"
+                    >
+                    <figcaption>
+                        Original photograph displayed at 400 pixels wide
+                        without changing its original dimensions.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h4>Proper Reduction of Image with Editor</h4>
+
+                <p>
+                    Using GIMP, I resized the personal photograph
+                    to 600 by 800 pixels while preserving the
+                    original aspect ratio. The plate remains circular.
+                </p>
+
+                <figure>
+                    <img
+                        src="images/round-plate-with-hand@matthew-lovegren-600x800.png"
+                        alt="Properly resized plate and hand photograph"
+                        width="300"
+                        height="400"
+                    >
+                    <figcaption>
+                        Properly reduced 600 by 800 PNG photograph.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h4>Improper Image Proportions with CSS</h4>
+
+                <p>
+                    These four photographs demonstrate incorrect
+                    proportions. The plate becomes distorted
+                    because its width or height is changed
+                    without maintaining the aspect ratio.
+                </p>
+
+                <!-- CSS classes intentionally distort the plate photographs. -->
+                <div class="picture-gallery">
+                    <figure>
+                        <img
+                            class="plate-short-one"
+                            src="images/round-plate-with-hand@matthew-lovegren-600x800.png"
+                            alt="Round plate compressed vertically"
+                        >
+                        <figcaption>
+                            Height reduced from 800 to 536 pixels.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            class="plate-short-two"
+                            src="images/round-plate-with-hand@matthew-lovegren-600x800.png"
+                            alt="Round plate heavily compressed vertically"
+                        >
+                        <figcaption>
+                            Height reduced further to 359 pixels.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            class="plate-narrow-one"
+                            src="images/round-plate-with-hand@matthew-lovegren-600x800.png"
+                            alt="Round plate compressed horizontally"
+                        >
+                        <figcaption>
+                            Width reduced from 600 to 402 pixels.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            class="plate-narrow-two"
+                            src="images/round-plate-with-hand@matthew-lovegren-600x800.png"
+                            alt="Round plate heavily compressed horizontally"
+                        >
+                        <figcaption>
+                            Width reduced further to 269 pixels.
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+
+            <article>
+                <h4>Improper Enlarging with CSS</h4>
+
+                <p>
+                    The first image is 600 by 800 pixels.
+                    The second was reduced to 150 by 200 pixels.
+                    Both are displayed at 300 by 400 pixels
+                    to demonstrate the loss of detail when
+                    enlarging a low-resolution photograph.
+                </p>
+
+                <!-- The gallery div compares the two resolutions. -->
+                <div class="picture-gallery">
+                    <figure>
+                        <img
+                            src="images/round-plate-with-hand@matthew-lovegren-600x800.png"
+                            alt="Higher-resolution plate and hand photograph"
+                            width="300"
+                            height="400"
+                        >
+                        <figcaption>
+                            600 by 800 photograph displayed at 300 by 400.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img
+                            src="images/round-plate-with-hand@matthew-lovegren-150x200.png"
+                            alt="Lower-resolution plate and hand photograph enlarged"
+                            width="300"
+                            height="400"
+                        >
+                        <figcaption>
+                            150 by 200 photograph enlarged to 300 by 400.
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- This div ID lets JavaScript insert the shared footer. -->
+    <div id="site-footer"></div>
+</body>
+</html>
