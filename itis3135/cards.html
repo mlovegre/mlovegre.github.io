@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,12 +15,78 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- This div and ID allow JavaScript to insert the shared header. -->
     <div id="site-header"></div>
 
     <main>
         <h2>Playing Cards</h2>
+
+        <p>
+            Welcome to the Mellow Lizard Lounge! Explore six
+            different activities designed for relaxation,
+            entertainment, and adventure.
+        </p>
+
+        <!-- This section organizes the six lounge activity cards.
+             The classes are used for responsive CSS styling. -->
+        <section class="lounge-collection">
+            <h3>Lounge Activities</h3>
+
+            <div class="lounge-grid">
+
+                <article class="lounge-card">
+                    <img src="images/card-gaming.png"
+                         alt="Gaming controller in a cozy lounge"
+                         width="200" height="200">
+                    <h4>The Gamer</h4>
+                    <p>Enjoy your favorite video games.</p>
+                </article>
+
+                <article class="lounge-card">
+                    <img src="images/card-reading.png"
+                         alt="Open book in a relaxing reading area"
+                         width="200" height="200">
+                    <h4>The Bookworm</h4>
+                    <p>Escape into a good book.</p>
+                </article>
+
+                <article class="lounge-card">
+                    <img src="images/card-music.png"
+                         alt="Headphones resting on a lounge table"
+                         width="200" height="200">
+                    <h4>The Musician</h4>
+                    <p>Unwind with your favorite music.</p>
+                </article>
+
+                <article class="lounge-card">
+                    <img src="images/card-movies.png"
+                         alt="Vintage film camera and a green lizard"
+                         width="200" height="200">
+                    <h4>The Movie Buff</h4>
+                    <p>Enjoy a relaxing movie night.</p>
+                </article>
+
+                <article class="lounge-card">
+                    <img src="images/card-dreaming.png"
+                         alt="Green lizard relaxing on a beanbag"
+                         width="200" height="200">
+                    <h4>The Dreamer</h4>
+                    <p>Find a quiet place to relax.</p>
+                </article>
+
+                <article class="lounge-card">
+                    <img src="images/card-exploring.png"
+                         alt="Compass resting on an adventure map"
+                         width="200" height="200">
+                    <h4>The Explorer</h4>
+                    <p>Discover something new every day.</p>
+                </article>
+
+            </div>
+        </section>
     </main>
 
+    <!-- This div and ID allow JavaScript to insert the shared footer. -->
     <div id="site-footer"></div>
 </body>
 </html>

@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Matthew Lovegren's Mellow Lizard | ITIS3135 | Survey</title>
+    <title>Matthew Lovegren's Mellow Lizard | ITIS3135 | Survey Form</title>
 
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -14,12 +15,131 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- This div uses an ID so JavaScript can insert the shared header component. -->
     <div id="site-header"></div>
 
     <main>
         <h2>Survey Form</h2>
+
+        <p>
+            Welcome to the Mellow Lizard Lounge!
+            Tell us a little about yourself and what
+            makes your perfect relaxing afternoon.
+        </p>
+
+        <!-- The form collects visitor preferences for the lounge.
+             It is a demonstration form and does not save responses. -->
+        <form action="survey.html" method="get">
+
+            <fieldset>
+                <legend>Visitor Information</legend>
+
+                <p>
+                    <label for="visitor-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="visitor-name"
+                        name="visitor-name"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="visitor-email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="visitor-email"
+                        name="visitor-email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="visitor-age">Age:</label>
+                    <input
+                        type="number"
+                        id="visitor-age"
+                        name="visitor-age"
+                        min="13"
+                        max="120"
+                    >
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Lounge Preferences</legend>
+
+                <p>
+                    <label for="favorite-activity">
+                        Favorite Relaxing Activity:
+                    </label>
+
+                    <select
+                        id="favorite-activity"
+                        name="favorite-activity"
+                    >
+                        <option value="">Select an activity</option>
+                        <option value="gaming">Playing Video Games</option>
+                        <option value="reading">Reading Books</option>
+                        <option value="music">Listening to Music</option>
+                        <option value="movies">Watching Movies</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+
+                <p>Would you visit the Mellow Lizard Lounge?</p>
+
+                <p>
+                    <input
+                        type="radio"
+                        id="visit-yes"
+                        name="would-visit"
+                        value="yes"
+                    >
+                    <label for="visit-yes">Yes</label>
+
+                    <input
+                        type="radio"
+                        id="visit-no"
+                        name="would-visit"
+                        value="no"
+                    >
+                    <label for="visit-no">No</label>
+
+                    <input
+                        type="radio"
+                        id="visit-maybe"
+                        name="would-visit"
+                        value="maybe"
+                    >
+                    <label for="visit-maybe">Maybe</label>
+                </p>
+
+                <p>
+                    <label for="suggestions">
+                        What would make your perfect lounge?
+                    </label>
+                </p>
+
+                <p>
+                    <textarea
+                        id="suggestions"
+                        name="suggestions"
+                        rows="5"
+                        cols="40"
+                        placeholder="Share your ideas here..."
+                    ></textarea>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit Survey</button>
+                <button type="reset">Reset Form</button>
+            </p>
+        </form>
     </main>
 
+    <!-- This div uses an ID so JavaScript can insert the shared footer component. -->
     <div id="site-footer"></div>
 </body>
 </html>

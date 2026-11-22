@@ -1,3 +1,4 @@
+
 body {
     max-width: 1200px;
     margin: 0 auto;
@@ -103,8 +104,7 @@ img {
     }
 }
 
-
-/* Introduction page display name */
+/* Introduction page display name. */
 h6 {
     text-align: center;
     font-family: Georgia, serif;
@@ -146,4 +146,129 @@ li ul {
 nav[aria-label="Introduction profile links"] {
     justify-content: center;
     margin-top: 30px;
+}
+
+/* Mellow Lizard Lounge activity cards. */
+
+.lounge-collection {
+    max-width: 1100px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.lounge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.lounge-card {
+    flex: 0 1 220px;
+}
+
+/* Individual lounge activity card. */
+.lounge-card {
+    padding: 20px;
+    background-color: #fffdf5;
+    border: 2px solid #b78338;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+/* Activity images. */
+.lounge-card img {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    border-radius: 8px;
+}
+
+/* Card titles. */
+.lounge-card-title {
+    color: #303d35;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Card descriptions. */
+.lounge-card p {
+    color: #303d35;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Subtle hover effect. */
+.lounge-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Accessibility: reduce animation when requested. */
+@media (prefers-reduced-motion: reduce) {
+    .lounge-card {
+        transition: none;
+    }
+
+    .lounge-card:hover {
+        transform: none;
+    }
+}
+
+/* Mellow Lizard Lounge inventory table. */
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-family: Arial, sans-serif;
+}
+
+main table caption {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main table th,
+main table td {
+    border: 1px solid #b78338;
+    padding: 12px;
+    text-align: left;
+}
+
+main table th {
+    background-color: #244638;
+    color: #fff8e7;
+}
+
+main table tbody tr:nth-child(even) {
+    background-color: #e8e0d2;
+    color: #303d35;
+}
+
+main table tbody tr:nth-child(odd) {
+    background-color: #f8f4ec;
+    color: #303d35;
+}
+
+/* Adjust inventory table on smaller screens. */
+@media (max-width: 600px) {
+    main table {
+        font-size: 13px;
+    }
+
+    main table th,
+    main table td {
+        padding: 6px;
+        overflow-wrap: anywhere;
+    }
 }

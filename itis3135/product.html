@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Matthew Lovegren's Mellow Lizard | ITIS3135 | Product Landing</title>
+    <title>Matthew Lovegren's Mellow Lizard | ITIS3135 | Product Landing Page</title>
 
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -14,12 +15,134 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- This div and ID allow JavaScript to insert the shared header. -->
     <div id="site-header"></div>
 
     <main>
         <h2>Product Landing Page</h2>
+
+        <p>
+            Discover the Mellow Lizard Lounge, a fictional
+            destination for gaming, reading, entertainment,
+            and relaxation.
+        </p>
+
+        <!-- The sections organize the landing page content.
+             The IDs support navigation and page organization. -->
+        <section id="lounge-features">
+            <h3>Discover the Lounge</h3>
+
+            <figure>
+                <img
+                    src="images/card-dreaming.png"
+                    alt="Green lizard relaxing in the Mellow Lizard Lounge"
+                    width="400"
+                    height="400"
+                >
+                <figcaption>
+                    Relax and unwind at the Mellow Lizard Lounge.
+                </figcaption>
+            </figure>
+
+            <p>
+                Whether you enjoy playing video games, reading
+                books, listening to music, or simply finding a
+                quiet place to relax, the Mellow Lizard Lounge
+                has something for everyone.
+            </p>
+        </section>
+
+        <section id="lounge-benefits">
+            <h3>Membership Benefits</h3>
+
+            <p>
+                Becoming a lounge member unlocks access to
+                additional activities and amenities.
+            </p>
+
+            <ul>
+                <li>Access to gaming and entertainment stations</li>
+                <li>Comfortable reading and relaxation areas</li>
+                <li>Exclusive member events and activities</li>
+                <li>Discounts on lounge merchandise</li>
+                <li>Priority equipment reservations</li>
+            </ul>
+        </section>
+
+        <section id="membership-options">
+            <h3>Membership Options</h3>
+
+            <p>
+                Choose the membership that best fits your
+                relaxation and entertainment needs.
+            </p>
+
+            <!-- This table compares fictional membership plans. -->
+            <table>
+                <caption>Mellow Lizard Lounge Memberships</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Membership</th>
+                        <th scope="col">Benefits</th>
+                        <th scope="col">Monthly Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Casual Lizard</td>
+                        <td>Basic lounge access</td>
+                        <td>$9.99</td>
+                    </tr>
+                    <tr>
+                        <td>Relaxed Lizard</td>
+                        <td>Lounge access and special events</td>
+                        <td>$19.99</td>
+                    </tr>
+                    <tr>
+                        <td>Legendary Lizard</td>
+                        <td>All amenities and priority reservations</td>
+                        <td>$29.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="membership-signup">
+            <h3>Join the Lounge</h3>
+
+            <p>
+                Interested in becoming a member? Enter your
+                email address below to express your interest.
+            </p>
+
+            <!-- Demonstration form; no information is stored. -->
+            <form action="product.html" method="get">
+                <p>
+                    <label for="membership-email">
+                        Email Address:
+                    </label>
+                    <input
+                        type="email"
+                        id="membership-email"
+                        name="membership-email"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <button type="submit">Join the Lounge</button>
+                </p>
+            </form>
+
+            <p>
+                This is a fictional membership service created
+                for an educational web development project.
+                No actual memberships are sold.
+            </p>
+        </section>
     </main>
 
+    <!-- This div and ID allow JavaScript to insert the shared footer. -->
     <div id="site-footer"></div>
 </body>
 </html>
