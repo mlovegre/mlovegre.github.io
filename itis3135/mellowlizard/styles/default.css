@@ -1,0 +1,156 @@
+
+/* Mellow Lizard Security - Main Stylesheet */
+
+:root {
+    --background: #101820;
+    --surface: #1b2933;
+    --accent: #54c6a0;
+    --text: #e8f0f2;
+    --muted: #b8c9ce;
+    --border: #365460;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+header {
+    max-width: 1200px;
+    margin: auto;
+    background-color: var(--surface);
+    border-bottom: 3px solid var(--accent);
+    text-align: center;
+    padding: 25px 15px;
+}
+
+h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--accent);
+    margin: 0;
+    font-size: 2.2rem;
+}
+
+h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--accent);
+}
+
+/* Tagline styling keeps the company slogan visually distinct. */
+.tagline {
+    color: var(--muted);
+    margin: 8px 0 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 15px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--accent);
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+nav a {
+    font-weight: bold;
+}
+
+main {
+    max-width: 1050px;
+    margin: 35px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 25px;
+}
+
+/* Hero images are sized consistently across company pages. */
+.hero-image {
+    display: block;
+    width: 100%;
+    max-height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+footer {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    background-color: var(--surface);
+    border-top: 2px solid var(--accent);
+    text-align: center;
+    padding: 25px 15px;
+}
+
+/* Availability Table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+caption {
+    color: var(--accent);
+    font-weight: bold;
+    padding: 12px;
+}
+
+th, td {
+    border: 1px solid var(--border);
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--background);
+    color: var(--accent);
+}
+
+/* Responsive adjustments for smaller screens. */
+
+@media screen and (max-width: 600px) {
+    /* The site-title class adjusts the heading on mobile devices. */
+    .site-title {
+        font-size: 1.7rem;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 12px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
