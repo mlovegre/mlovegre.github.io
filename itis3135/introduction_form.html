@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matthew Lovegren's Mellow Lizard | ITIS3135 | Introduction Form</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script src="scripts/include_components.js" defer></script>
+    <script src="scripts/introduction.js" defer></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- This div uses its ID to load the shared header. -->
+    <div id="site-header"></div>
+
+    <main>
+        <h2>Introduction Form</h2>
+
+        <div id="introduction-content">
+            <!-- This div allows JavaScript to replace the form with the introduction. -->
+            <h3>Please Submit the Form Below</h3>
+
+            <p>
+                Complete the fields to generate a personalized
+                introduction page. The form is prefilled with
+                my introduction information.
+            </p>
+
+            <form id="introduction-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" name="firstName"
+                           value="Matthew" required>
+
+                    <label for="middleName">Middle Name or Initial:</label>
+                    <input id="middleName" name="middleName"
+                           value="W.">
+
+                    <label for="nickname">Preferred Name:</label>
+                    <input id="nickname" name="nickname"
+                           value="Matt">
+
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" name="lastName"
+                           value="Lovegren" required>
+
+                    <label for="acknowledgment">Acknowledgment:</label>
+                    <textarea id="acknowledgment" name="acknowledgment"
+                              required>I understand that this is a public document and will not include information I do not want others to see.</textarea>
+
+                    <label for="acknowledgmentDate">Acknowledgment Date:</label>
+                   <input type="text" id="acknowledgmentDate"
+                    name="acknowledgmentDate"
+                    value="2026-08-24"
+                    placeholder="YYYY-MM-DD"
+                    pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+                    title="Enter the date as YYYY-MM-DD"
+                    required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mascot Information</legend>
+
+                    <label for="adjectives">Mascot Adjective:</label>
+                    <input id="adjectives" name="adjectives"
+                           value="Mellow" required>
+
+                    <label for="animal">Mascot Animal:</label>
+                    <input id="animal" name="animal"
+                           value="Lizard" required>
+
+                    <label for="prettyNameDivider">Name Divider:</label>
+                    <input id="prettyNameDivider"
+                           name="prettyNameDivider"
+                           value="~" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Introduction Photograph</legend>
+
+                    <p>
+                        Default image: images/introduction-picture.png
+                    </p>
+
+                    <label for="picture">Upload a Different Picture:</label>
+                    <input type="file" id="picture" name="picture"
+                           accept="image/*">
+
+                    <label for="pictureAlt">Picture Description:</label>
+                    <input id="pictureAlt" name="pictureAlt"
+                           value="Photograph of Matthew Lovegren before going out"
+                           required>
+
+                    <label for="caption">Picture Caption:</label>
+                    <input id="caption" name="caption"
+                           value="A picture taken before going out one day."
+                           required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Personal Statement</legend>
+
+                    <label for="statement">Introduction Statement:</label>
+                    <textarea id="statement" name="statement"
+                              rows="6" required>My name is Matthew but I often go by Matt, I am currently a sophomore in school and I am using the GI bill to attend. I am a Computer Science major looking to get my degree here in a year and a half. My concentration is Cyber Security as I am fascinated by it and hope to learn all that I can.</textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Background Information</legend>
+
+                    <label for="personalBackground">
+                        Personal Background:
+                    </label>
+                    <textarea id="personalBackground"
+                              name="personalBackground"
+                              rows="4" required>I traveled a bit throughout my youth, I was born in Minnesota before moving down to Las Vegas, eventually ending up and settling in North Carolina about three years ago.</textarea>
+
+                    <label for="professionalBackground">
+                        Professional Background:
+                    </label>
+                    <textarea id="professionalBackground"
+                              name="professionalBackground"
+                              rows="4" required>I served in the Military for five and a half years, I currently attend school using the GI bill.</textarea>
+
+                    <label for="academicBackground">
+                        Academic Background:
+                    </label>
+                    <textarea id="academicBackground"
+                              name="academicBackground"
+                              rows="4" required>I am currently in my second year at University of North Carolina, my major is Computer Science with a concentration in Cyber Security.</textarea>
+
+                    <label for="primaryWorkComputer">
+                        Primary Work Computer:
+                    </label>
+                    <textarea id="primaryWorkComputer"
+                              name="primaryWorkComputer"
+                              rows="3" required>Custom-built desktop computer running Windows 10 (64-bit), with an AMD Ryzen 7 3700X processor.</textarea>
+
+                    <label for="primaryWorkLocation">
+                        Primary Work Location:
+                    </label>
+                    <input id="primaryWorkLocation"
+                           name="primaryWorkLocation"
+                           value="Home Office" required>
+
+                    <label for="alternateComputerLocation">
+                        Alternate Computer &amp; Location:
+                    </label>
+                    <textarea id="alternateComputerLocation"
+                              name="alternateComputerLocation"
+                              rows="4" required>I have an ACER laptop and an Alienware laptop that I can take with me to work wherever I want. There is a coffee shop I frequent called Not Just Coffee that I often get work done at.</textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Courses I'm Taking</legend>
+
+                    <!-- JavaScript adds and removes course groups here. -->
+                    <div id="courses-container"></div>
+
+                    <button type="button" id="add-course">
+                        Add Course
+                    </button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quote and Additional Information</legend>
+
+                    <label for="quote">Favorite Quote:</label>
+                    <textarea id="quote" name="quote"
+                              rows="3" required>You only live once, but if you do it right, once is enough.</textarea>
+
+                    <label for="quoteAuthor">Quote Author:</label>
+                    <input id="quoteAuthor" name="quoteAuthor"
+                           value="Mae West" required>
+
+                    <label for="funnyItem">
+                        Funny or Interesting Thing (Optional):
+                    </label>
+                    <textarea id="funnyItem" name="funnyItem"
+                              rows="3">I have traveled out of the country, visiting Korea.</textarea>
+
+                    <label for="somethingToShare">
+                        Something to Share (Optional):
+                    </label>
+                    <textarea id="somethingToShare"
+                              name="somethingToShare"
+                              rows="3"
+                              placeholder="Something else you would like to share"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Footer Links</legend>
+
+                    <p>
+                        Enter the labels and URLs for your personal links.
+                    </p>
+
+                    <!-- JavaScript populates the five footer link groups. -->
+                    <div id="footer-links-container"></div>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" id="clear-form">Clear</button>
+                </p>
+
+                <p>
+                    <button type="button" id="generate-html">
+                        Generate HTML
+                    </button>
+
+                    <button type="button" id="generate-json">
+                        Generate JSON
+                    </button>
+
+                    <button type="button" id="generate-xml">
+                        Generate XML
+                    </button>
+                </p>
+            </form>
+
+            <!-- Generated source code is displayed inside this area. -->
+            <div id="generated-output" hidden>
+                <h3 id="output-heading">Generated Code</h3>
+                <label for="output-code">Generated Source Code:</label>
+                <textarea id="output-code" rows="18" readonly></textarea>
+            </div>
+        </div>
+    </main>
+
+    <!-- This div uses its ID to load the shared footer. -->
+    <div id="site-footer"></div>
+</body>
+</html>
