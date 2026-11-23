@@ -16,7 +16,10 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Shared header component. -->
+    <!--
+        The site-header ID identifies where JavaScript
+        inserts the shared header component.
+    -->
     <div id="site-header" data-include="components/header.html"></div>
 
     <main>
@@ -41,6 +44,10 @@
                 improvements that support long-term digital safety.
             </p>
 
+            <!--
+                The hero-image class applies consistent
+                responsive image styling across all pages.
+            -->
             <img
                 src="images/security-process.png"
                 alt="Cybersecurity process illustration showing consultation, assessment, recommendations, and follow-up support"
@@ -119,7 +126,17 @@
             </p>
         </section>
 
-        <!-- Dynamic Feature 3: Security Service Recommendation Tool -->
+        <!--
+            Dynamic Feature 3: Security Service Recommendation Tool.
+
+            The service-recommender ID identifies the form used
+            to collect the visitor's selected security concerns.
+
+            The service-results ID identifies the results section.
+            The service-summary ID displays the recommendation
+            summary, and the service-list ID allows JavaScript
+            to generate a list of recommended services.
+        -->
         <section>
             <h3>Find Your Security Solution</h3>
 
@@ -203,6 +220,10 @@
                 </button>
             </form>
 
+            <!--
+                The hidden results section becomes visible
+                when JavaScript processes the selected concerns.
+            -->
             <section id="service-results" hidden aria-live="polite">
                 <h3>Your Recommended Security Services</h3>
 
@@ -240,7 +261,10 @@
         </section>
     </main>
 
-    <!-- Shared footer component. -->
+    <!--
+        The site-footer ID identifies where JavaScript
+        inserts the shared footer component.
+    -->
     <div id="site-footer" data-include="components/footer.html"></div>
 </body>
 </html>

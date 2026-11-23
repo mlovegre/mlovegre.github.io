@@ -16,7 +16,10 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Shared header component. -->
+    <!--
+        The site-header ID identifies the location where
+        JavaScript loads the shared header component.
+    -->
     <div id="site-header" data-include="components/header.html"></div>
 
     <main>
@@ -42,6 +45,10 @@
                 that match your goals and resources.
             </p>
 
+            <!--
+                The hero-image class provides consistent
+                responsive image sizing across the business site.
+            -->
             <img
                 src="images/security-services.png"
                 alt="Secure browser interface with a padlock and cybersecurity information"
@@ -123,7 +130,17 @@
             </p>
         </section>
 
-        <!-- Dynamic Feature 1: Interactive Password Strength Checker -->
+        <!--
+            Dynamic Feature 1: Password Strength Checker.
+
+            The password-input ID identifies the input field.
+            The toggle-password ID allows JavaScript to show
+            or hide the example password.
+
+            The password-strength, strength-meter, and
+            password-feedback IDs allow JavaScript to update
+            the strength rating, progress bar, and suggestions.
+        -->
         <section>
             <h3>Interactive Password Strength Checker</h3>
 
@@ -193,7 +210,10 @@
         </section>
     </main>
 
-    <!-- Shared footer component. -->
+    <!--
+        The site-footer ID identifies the location where
+        JavaScript loads the shared footer component.
+    -->
     <div id="site-footer" data-include="components/footer.html"></div>
 </body>
 </html>

@@ -16,7 +16,10 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Shared header component. -->
+    <!--
+        The site-header ID identifies where JavaScript inserts
+        the shared header from components/header.html.
+    -->
     <div id="site-header" data-include="components/header.html"></div>
 
     <main>
@@ -40,6 +43,10 @@
                 build stronger defenses against digital threats.
             </p>
 
+            <!--
+                The hero-image class applies consistent image
+                sizing and responsive styling across the website.
+            -->
             <img
                 src="images/security-home.png"
                 alt="Mellow Lizard mascot at a cybersecurity workstation"
@@ -72,7 +79,17 @@
             </p>
         </section>
 
-        <!-- Dynamic Feature 2: Cybersecurity Readiness Quiz -->
+        <!--
+            Dynamic Feature 2: Cybersecurity Readiness Quiz.
+
+            The security-quiz ID allows JavaScript to process
+            the form when visitors submit their answers.
+
+            The quiz-results ID identifies the results section.
+            The quiz-score, quiz-rating, quiz-feedback, and
+            quiz-recommendations IDs allow JavaScript to update
+            the visitor's score, rating, and recommendations.
+        -->
         <section>
             <h3>Cybersecurity Readiness Quiz</h3>
 
@@ -179,6 +196,11 @@
                 </button>
             </form>
 
+            <!--
+                This ID identifies the results section that
+                JavaScript displays after the quiz is completed.
+                The hidden attribute keeps it invisible initially.
+            -->
             <section id="quiz-results" hidden aria-live="polite">
                 <h3>Your Cybersecurity Readiness Results</h3>
 
@@ -193,7 +215,10 @@
         </section>
     </main>
 
-    <!-- Shared footer component. -->
+    <!--
+        The site-footer ID identifies where JavaScript inserts
+        the shared footer from components/footer.html.
+    -->
     <div id="site-footer" data-include="components/footer.html"></div>
 </body>
 </html>
