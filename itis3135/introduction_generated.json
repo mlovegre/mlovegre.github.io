@@ -1,0 +1,75 @@
+{
+  "firstName": "Matthew",
+  "middleName": "W.",
+  "nickname": "Matt",
+  "lastName": "Lovegren",
+  "acknowledgment": "I understand that this is a public document and will not include information I do not want others to see.",
+  "acknowledgmentDate": "2026-08-24",
+  "prettyNameDivider": "~",
+  "adjectives": "Mellow",
+  "animal": "Lizard",
+  "img": "images/introduction-picture.png",
+  "pictureAlt": "Photograph of Matthew Lovegren before going out",
+  "caption": "A picture taken before going out one day.",
+  "personalInfo": {
+    "statement": "My name is Matthew but I often go by Matt, I am currently a sophomore in school and I am using the GI bill to attend. I am a Computer Science major looking to get my degree here in a year and a half. My concentration is Cyber Security as I am fascinated by it and hope to learn all that I can.",
+    "personalBackground": "I traveled a bit throughout my youth, I was born in Minnesota before moving down to Las Vegas, eventually ending up and settling in North Carolina about three years ago.",
+    "professionalBackground": "I served in the Military for five and a half years, I currently attend school using the GI bill.",
+    "academicBackground": "I am currently in my second year at University of North Carolina, my major is Computer Science with a concentration in Cyber Security.",
+    "primaryWorkComputer": "Custom-built desktop computer running Windows 10 (64-bit), with an AMD Ryzen 7 3700X processor.",
+    "primaryWorkLocation": "Home Office",
+    "alternateComputerLocation": "I have an ACER laptop and an Alienware laptop that I can take with me to work wherever I want. There is a coffee shop I frequent called Not Just Coffee that I often get work done at."
+  },
+  "courses": [
+    {
+      "department": "ITIS",
+      "courseNumber": "3135",
+      "courseTitle": "Front End Web Development",
+      "reasonForTaking": "I have little experience with developing working applications at this time and took this class to get more experience with it."
+    },
+    {
+      "department": "ITIS",
+      "courseNumber": "3200",
+      "courseTitle": "Intro to Info Security & Priv",
+      "reasonForTaking": "I took this class because I have an interest with Cyber Security as it is my concentration."
+    },
+    {
+      "department": "ITSC",
+      "courseNumber": "2175",
+      "courseTitle": "Logic and Algorithms",
+      "reasonForTaking": "I took this class because my major required it."
+    },
+    {
+      "department": "MATH",
+      "courseNumber": "1241",
+      "courseTitle": "Calculus II",
+      "reasonForTaking": "My major requires this class."
+    }
+  ],
+  "quote": "You only live once, but if you do it right, once is enough.",
+  "quoteAuthor": "Mae West",
+  "funnyItem": "I have traveled out of the country, visiting Korea.",
+  "somethingToShare": "",
+  "footerLinks": [
+    {
+      "label": "CLT Web",
+      "url": "https://webpages.charlotte.edu/mlovegre/"
+    },
+    {
+      "label": "GitHub Pages",
+      "url": ""
+    },
+    {
+      "label": "GitHub",
+      "url": ""
+    },
+    {
+      "label": "freeCodeCamp",
+      "url": ""
+    },
+    {
+      "label": "LinkedIn",
+      "url": ""
+    }
+  ]
+}
