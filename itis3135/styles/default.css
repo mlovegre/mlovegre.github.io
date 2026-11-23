@@ -358,3 +358,70 @@ button:hover {
         margin: 12px auto;
     }
 }
+
+
+/* Yearbook cards display student introductions from the API. */
+#yearbook-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 25px auto;
+}
+
+/* Each card contains a student photograph and introduction details. */
+.yearbook-card {
+    padding: 20px;
+    border: 2px solid #b78338;
+    border-radius: 12px;
+    background-color: #f3eee4;
+    color: #303d35;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.yearbook-photo {
+    margin: 0 auto 15px;
+}
+
+.yearbook-photo img {
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.yearbook-photo figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.yearbook-name {
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+.yearbook-mascot {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.yearbook-quote {
+    margin: 15px 0;
+    padding: 10px;
+    font-style: italic;
+}
+
+.yearbook-academic {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.yearbook-placeholder {
+    padding: 50px 10px;
+    background-color: #e5ddce;
+    border-radius: 8px;
+}
