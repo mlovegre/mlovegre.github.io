@@ -11,11 +11,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <script src="scripts/include_components.js" defer></script>
+    <script src="scripts/security-quiz.js" defer></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- This div uses the site-header ID to load the shared components/header.html file. -->
+    <!-- Shared header component. -->
     <div id="site-header" data-include="components/header.html"></div>
 
     <main>
@@ -39,7 +40,6 @@
                 build stronger defenses against digital threats.
             </p>
 
-            <!-- The hero-image class provides consistent sizing for the homepage image. -->
             <img
                 src="images/security-home.png"
                 alt="Mellow Lizard mascot at a cybersecurity workstation"
@@ -71,9 +71,129 @@
                 <a href="services.html">Explore Our Security Services</a>
             </p>
         </section>
+
+        <!-- Dynamic Feature 2: Cybersecurity Readiness Quiz -->
+        <section>
+            <h3>Cybersecurity Readiness Quiz</h3>
+
+            <p>
+                How prepared are you to protect your digital
+                information? Answer five questions about your
+                cybersecurity habits to discover areas where
+                you can improve your online safety.
+            </p>
+
+            <p>
+                This interactive quiz provides general security
+                recommendations based on your answers. Your
+                responses are evaluated directly in your browser.
+            </p>
+
+            <form id="security-quiz">
+                <fieldset>
+                    <legend>
+                        1. Do you use unique passwords for your accounts?
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="question1" value="1" required>
+                        Yes, every account has a unique password.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question1" value="0">
+                        No, I reuse passwords.
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        2. Do you enable multi-factor authentication?
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="question2" value="1" required>
+                        Yes, whenever it is available.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question2" value="0">
+                        No, I usually rely on passwords alone.
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        3. How often do you install security updates?
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="question3" value="1" required>
+                        Promptly or automatically.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question3" value="0">
+                        Rarely or only when necessary.
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        4. Do you verify suspicious emails and links?
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="question4" value="1" required>
+                        Yes, I verify their legitimacy before interacting.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question4" value="0">
+                        No, I sometimes open links without checking.
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        5. Do you regularly back up important files?
+                    </legend>
+
+                    <label>
+                        <input type="radio" name="question5" value="1" required>
+                        Yes, I maintain regular backups.
+                    </label>
+
+                    <label>
+                        <input type="radio" name="question5" value="0">
+                        No, I do not maintain regular backups.
+                    </label>
+                </fieldset>
+
+                <button type="submit">
+                    Calculate My Score
+                </button>
+
+                <button type="reset">
+                    Reset Quiz
+                </button>
+            </form>
+
+            <section id="quiz-results" hidden aria-live="polite">
+                <h3>Your Cybersecurity Readiness Results</h3>
+
+                <p id="quiz-score"></p>
+
+                <p id="quiz-rating"></p>
+
+                <p id="quiz-feedback"></p>
+
+                <ul id="quiz-recommendations"></ul>
+            </section>
+        </section>
     </main>
 
-    <!-- This div uses the site-footer ID to load the shared components/footer.html file. -->
+    <!-- Shared footer component. -->
     <div id="site-footer" data-include="components/footer.html"></div>
 </body>
 </html>

@@ -11,11 +11,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <script src="scripts/include_components.js" defer></script>
+    <script src="scripts/service-recommender.js" defer></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- This div uses the site-header ID to load the shared header from components/header.html. -->
+    <!-- Shared header component. -->
     <div id="site-header" data-include="components/header.html"></div>
 
     <main>
@@ -40,7 +41,6 @@
                 improvements that support long-term digital safety.
             </p>
 
-            <!-- The hero-image class provides consistent sizing for the Our Process page image. -->
             <img
                 src="images/security-process.png"
                 alt="Cybersecurity process illustration showing consultation, assessment, recommendations, and follow-up support"
@@ -119,6 +119,105 @@
             </p>
         </section>
 
+        <!-- Dynamic Feature 3: Security Service Recommendation Tool -->
+        <section>
+            <h3>Find Your Security Solution</h3>
+
+            <p>
+                Not sure which cybersecurity service is right
+                for you? Select the security concerns that
+                apply to your situation, and our interactive
+                tool will suggest services that may help.
+            </p>
+
+            <p>
+                You can select multiple concerns to receive
+                more than one recommendation. This tool
+                provides general guidance and does not
+                replace a professional security assessment.
+            </p>
+
+            <form id="service-recommender">
+                <fieldset>
+                    <legend>
+                        What cybersecurity concerns do you have?
+                    </legend>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="concern"
+                                value="website">
+                            My website may have security weaknesses.
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="concern"
+                                value="network">
+                            I want to improve my network security.
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="concern"
+                                value="vulnerabilities">
+                            I want to identify potential vulnerabilities.
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="concern"
+                                value="training">
+                            I want to learn how to recognize cyber threats.
+                        </label>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input
+                                type="checkbox"
+                                name="concern"
+                                value="accounts">
+                            I need help improving account and password security.
+                        </label>
+                    </p>
+                </fieldset>
+
+                <button type="submit">
+                    Find Recommended Services
+                </button>
+
+                <button type="reset">
+                    Clear Selections
+                </button>
+            </form>
+
+            <section id="service-results" hidden aria-live="polite">
+                <h3>Your Recommended Security Services</h3>
+
+                <p id="service-summary"></p>
+
+                <ul id="service-list"></ul>
+
+                <p>
+                    <a href="services.html">
+                        Explore Our Services
+                    </a>
+                </p>
+            </section>
+        </section>
+
         <section>
             <h3>Begin Your Security Journey</h3>
 
@@ -141,7 +240,7 @@
         </section>
     </main>
 
-    <!-- This div uses the site-footer ID to load the shared footer from components/footer.html. -->
+    <!-- Shared footer component. -->
     <div id="site-footer" data-include="components/footer.html"></div>
 </body>
 </html>
