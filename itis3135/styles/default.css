@@ -425,3 +425,52 @@ button:hover {
     background-color: #e5ddce;
     border-radius: 8px;
 }
+
+
+/* =========================================
+   Everything Pictures - Improper Proportions
+   ========================================= */
+
+/* Lizard distortion examples */
+
+.picture-gallery .lizard-short-one {
+    width: 600px;
+    height: 600px;
+}
+
+.picture-gallery .lizard-short-two {
+    width: 600px;
+    height: 400px;
+}
+
+.picture-gallery .lizard-narrow-one {
+    width: 400px;
+    height: 900px;
+}
+
+.picture-gallery .lizard-narrow-two {
+    width: 267px;
+    height: 900px;
+}
+
+/* Plate distortion examples */
+
+.picture-gallery .plate-short-one {
+    width: 600px;
+    height: 536px;
+}
+
+.picture-gallery .plate-short-two {
+    width: 600px;
+    height: 359px;
+}
+
+.picture-gallery .plate-narrow-one {
+    width: 402px;
+    height: 800px;
+}
+
+.picture-gallery .plate-narrow-two {
+    width: 269px;
+    height: 800px;
+}
